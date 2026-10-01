@@ -9,6 +9,63 @@ The Android sample uses online OpenFreeMap tiles, glyphs and style. Network/styl
 
 ## Android SDK example
 
+### Docker build and adb launch
+
+Requires Docker with Linux containers and Android platform-tools (`adb`) on
+the host. Start your emulator separately. Docker supplies the JDK and Android
+SDK; no host JDK or Gradle installation is needed. Run from the repository root:
+
+Linux:
+
+```sh
+./android/build-docker.sh
+./android/run-adb.sh --serial emulator-5554
+```
+
+Windows PowerShell (Docker Desktop in Linux containers mode, or Docker in WSL):
+
+```powershell
+./android/build-docker.ps1
+./android/run-adb.ps1 -Serial emulator-5554
+```
+
+If the Windows `docker` command is unavailable, the PowerShell build script
+automatically uses Docker in the default WSL distribution. `-UseWsl` selects
+that mode explicitly. Android platform-tools still run on the Windows host.
+
+The APK is written to `android/build/docker/maplibre-repro.apk`. The adb helper
+installs it, restarts the sample, starts the 120-frame run and streams logs.
+Use `--no-logcat` / `-NoLogcat` to return immediately after launch. Ctrl+C stops
+log streaming, not the app. Stop the app using its Stop button or
+`adb -s emulator-5554 shell am force-stop org.example.maplibrerepro`.
+Use `--adb /path/to/adb` / `-Adb 'C:\path\to\adb.exe'` if adb is not on PATH,
+and `--apk FILE` / `-Apk FILE` to install a different APK.
+
+Optional SDK version and local patched AAR:
+
+```sh
+./android/build-docker.sh --version 11.11.0 --aar /path/to/patched.aar
+```
+
+```powershell
+./android/build-docker.ps1 -Version 11.11.0 -Aar 'C:\path\to\patched.aar'
+```
+
+The first build downloads a large Android image and dependencies; allow several
+GB of disk space. Subsequent builds reuse the Docker image and the named
+`maplibre-4706-gradle` volume. The `maplibre-4706-signing` volume preserves the
+debug signing key so APKs built by these scripts can replace one another.
+The source tree is copied into the image using an allowlist; local AARs are
+mounted read-only for the build and are not included in the image.
+The scripts do not uninstall applications or change device proxy settings.
+
+For an existing compatible Android build image/cache, Linux supports
+`BASE_IMAGE` and `GRADLE_CACHE_VOLUME` environment variables; PowerShell supports
+`-BaseImage` and `-GradleCacheVolume`. The default base is
+`cimg/android:2026.07.1` (linux/amd64).
+
+### Build without Docker
+
 Requires JDK 17 or 21, Android SDK platform 36, and an Android device/emulator (API 23+). Set `ANDROID_HOME` to your SDK, or use Android Studio to open `android/`. Use an x86_64 emulator with host GPU acceleration to match the reported crash; software rendering or another driver may not reproduce it.
 
 ```sh
