@@ -33,15 +33,20 @@ If the Windows `docker` command is unavailable, the PowerShell build script
 automatically uses Docker in the default WSL distribution. `-UseWsl` selects
 that mode explicitly. Android platform-tools still run on the Windows host.
 
-The APK is written to `android/build/docker/maplibre-repro.apk`. The adb helper
-installs it, restarts the sample, starts the 120-frame run and streams logs.
+By default the build produces **two APKs** in `android/build/docker/`:
+`maplibre-unpatched.apk` and `maplibre-fixed.apk`. No prebuilt patched AAR is
+required: Docker downloads SDK 11.11.0 sources, applies the bundled patch,
+builds the native libraries and packages the fixed SDK automatically.
+The adb helper defaults to the unpatched app; use `--variant fixed` / `-Variant fixed`
+to run the fixed app. It installs the APK, restarts the sample, starts the
+120-frame run and streams logs.
 Use `--no-logcat` / `-NoLogcat` to return immediately after launch. Ctrl+C stops
 log streaming, not the app. Stop the app using its Stop button or
 `adb -s emulator-5554 shell am force-stop org.example.maplibrerepro`.
 Use `--adb /path/to/adb` / `-Adb 'C:\path\to\adb.exe'` if adb is not on PATH,
 and `--apk FILE` / `-Apk FILE` to install a different APK.
 
-Optional SDK version and local patched AAR:
+Optional prebuilt patched AAR (skips the native SDK compilation):
 
 ```sh
 ./android/build-docker.sh --version 11.11.0 --aar /path/to/patched.aar
@@ -51,10 +56,20 @@ Optional SDK version and local patched AAR:
 ./android/build-docker.ps1 -Version 11.11.0 -Aar 'C:\path\to\patched.aar'
 ```
 
-The first build downloads a large Android image and dependencies; allow several
-GB of disk space. Subsequent builds reuse the Docker image and the named
+The first build downloads a large Android image, NDK and SDK source dependencies
+and compiles C++ for x86_64 and arm64-v8a. Allow substantial time and at least
+10 GB of free disk space. These are the supported ABIs of the automatically
+built fixed APK; 32-bit devices are not supported by that APK.
+Subsequent builds reuse the Docker image and the named
 `maplibre-4706-gradle` volume. The `maplibre-4706-signing` volume preserves the
 debug signing key so APKs built by these scripts can replace one another.
+The native cache is keyed by the build recipe and patch, and verifies the
+patched AAR checksum before reuse. SDK source commit
+`753b7ae79563a1d5da27135d0f496fdce6aeb651`, NDK 28.1.13356709 and CMake 3.31.6
+are pinned. `patched-sdk-manifest.json` beside the APKs records their SDK
+build provenance. A changed patch creates a new native cache entry.
+Native compilation uses eight parallel jobs by default. Set the host environment
+variable `MAPLIBRE_BUILD_JOBS` to a smaller positive integer on memory-limited machines.
 The source tree is copied into the image using an allowlist; local AARs are
 mounted read-only for the build and are not included in the image.
 The scripts do not uninstall applications or change device proxy settings.
@@ -63,6 +78,40 @@ For an existing compatible Android build image/cache, Linux supports
 `BASE_IMAGE` and `GRADLE_CACHE_VOLUME` environment variables; PowerShell supports
 `-BaseImage` and `-GradleCacheVolume`. The default base is
 `cimg/android:2026.07.1` (linux/amd64).
+
+### Two APKs installed side by side
+
+Building a pair with the bundled patch is the default:
+
+```sh
+./android/build-docker.sh
+./android/run-adb.sh --variant unpatched
+./android/run-adb.sh --variant fixed
+```
+
+```powershell
+./android/build-docker.ps1
+./android/run-adb.ps1 -Variant unpatched
+./android/run-adb.ps1 -Variant fixed
+```
+
+Run the adb commands separately (Ctrl+C exits each log stream). Both apps can
+remain installed; launching one puts the other in the background and stops its
+snapshot loop. Outputs in `android/build/docker/`:
+
+| APK | Launcher name | Application ID |
+| --- | --- | --- |
+| `maplibre-unpatched.apk` | MapLibre Unpatched | `org.example.maplibrerepro.unpatched` |
+| `maplibre-fixed.apk` | MapLibre Fixed | `org.example.maplibrerepro.fixed` |
+
+The pair uses the same sample source and signing key. The unpatched variant
+uses the published Maven SDK; only the fixed variant uses the patched AAR.
+Crashing remains driver-dependent; see the recorded environment in `evidence/`.
+
+`--single` / `-Single` retains the original one-APK mode (`maplibre-repro.apk`,
+application ID `org.example.maplibrerepro`). To launch that artifact, pass
+`--variant default` / `-Variant default`. Pair builds of other SDK versions
+require a corresponding prebuilt AAR because the bundled patch targets 11.11.0.
 
 ### Build without Docker
 
@@ -96,7 +145,7 @@ To test an AAR built from the corresponding SDK source with/without the patch:
 ./gradlew :app:assembleDebug -PmaplibreVersion=VERSION -PmaplibreAar=/absolute/path/to/maplibre.aar
 ```
 
-Set `VERSION` to match your AAR's Java API and transitive dependencies. No patched binary is bundled. Compare identical app/style/device settings; an AAR from another SDK release is not an isolated test of this patch.
+Set `VERSION` to match your AAR's Java API and transitive dependencies. No patched binary is committed to Git. Compare identical app/style/device settings; an AAR from another SDK release is not an isolated test of this patch.
 
 The SDK 11.11.0 patch used for the recorded control is included in
 [`evidence/android-sdk/sdk-11.11.0-fix.patch`](evidence/android-sdk/sdk-11.11.0-fix.patch).

@@ -8,5 +8,6 @@ MapLibre SDK and its dependencies are downloaded by Gradle and retain their
 respective licenses. Map data, styles, sprites and glyphs are loaded from
 OpenFreeMap at runtime and are not included in this repository.
 
-The SDK patch under `evidence/android-sdk/` includes MapLibre source context
-and is covered by the accompanying `MAPLIBRE-LICENSE` (BSD 2-Clause).
+The SDK patches under `evidence/android-sdk/` and `android/native/` include
+MapLibre source context and are covered by the accompanying `MAPLIBRE-LICENSE`
+and `LICENSE` respectively (BSD 2-Clause).

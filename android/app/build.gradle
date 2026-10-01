@@ -1,10 +1,17 @@
 plugins { id 'com.android.application' }
+def reproVariant = providers.gradleProperty('reproVariant').getOrElse('default')
+if (!(reproVariant in ['default', 'unpatched', 'fixed'])) {
+    throw new GradleException('reproVariant must be default, unpatched or fixed')
+}
 
 android {
     namespace 'org.example.maplibrerepro'
     compileSdk 36
     defaultConfig {
         applicationId 'org.example.maplibrerepro'
+        if (reproVariant != 'default') applicationIdSuffix ".${reproVariant}"
+        manifestPlaceholders = [appLabel: reproVariant == 'default' ? 'MapLibre Snapshot Repro' :
+            (reproVariant == 'fixed' ? 'MapLibre Fixed' : 'MapLibre Unpatched')]
         minSdk 23
         targetSdk 36
         versionCode 1

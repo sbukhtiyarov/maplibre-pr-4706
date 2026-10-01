@@ -1,6 +1,8 @@
 *
 !Dockerfile
 !docker-build.sh
+!native/
+!native/**
 !gradlew
 !gradle/
 !gradle/**
