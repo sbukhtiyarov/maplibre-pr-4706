@@ -1,0 +1,243 @@
+10-01 11:59:01.155 10505 10505 I SnapshotRepro: Ready: 480x240, pixel ratio 1, zoom 15, pitch 40, JPEG 50
+10-01 11:59:01.189 10505 10505 I SnapshotRepro: START style=https://tiles.openfreemap.org/styles/bright
+10-01 11:59:01.297 10505 10505 I SnapshotRepro: REQUEST 1 bearing=0.315
+10-01 11:59:03.938 10505 10505 I SnapshotRepro: FRAME 1 durationMs=2642 jpegBytes=17630 encoded=true
+10-01 11:59:03.959 10505 10505 I SnapshotRepro: REQUEST 2 bearing=8.306999999999999
+10-01 11:59:04.396 10505 10505 I SnapshotRepro: FRAME 2 durationMs=437 jpegBytes=18242 encoded=true
+10-01 11:59:04.959 10505 10505 I SnapshotRepro: REQUEST 3 bearing=11.31
+10-01 11:59:05.072 10505 10505 I SnapshotRepro: FRAME 3 durationMs=113 jpegBytes=18087 encoded=true
+10-01 11:59:05.962 10505 10505 I SnapshotRepro: REQUEST 4 bearing=14.318999999999999
+10-01 11:59:06.049 10505 10505 I SnapshotRepro: FRAME 4 durationMs=88 jpegBytes=18304 encoded=true
+10-01 11:59:06.964 10505 10505 I SnapshotRepro: REQUEST 5 bearing=17.325
+10-01 11:59:07.037 10505 10505 I SnapshotRepro: FRAME 5 durationMs=73 jpegBytes=18081 encoded=true
+10-01 11:59:07.966 10505 10505 I SnapshotRepro: REQUEST 6 bearing=20.328
+10-01 11:59:08.033 10505 10505 I SnapshotRepro: FRAME 6 durationMs=68 jpegBytes=17774 encoded=true
+10-01 11:59:08.967 10505 10505 I SnapshotRepro: REQUEST 7 bearing=23.334
+10-01 11:59:09.026 10505 10505 I SnapshotRepro: FRAME 7 durationMs=60 jpegBytes=18009 encoded=true
+10-01 11:59:09.969 10505 10505 I SnapshotRepro: REQUEST 8 bearing=26.340000000000003
+10-01 11:59:10.052 10505 10505 I SnapshotRepro: FRAME 8 durationMs=84 jpegBytes=17743 encoded=true
+10-01 11:59:10.971 10505 10505 I SnapshotRepro: REQUEST 9 bearing=29.346
+10-01 11:59:11.051 10505 10505 I SnapshotRepro: FRAME 9 durationMs=81 jpegBytes=17671 encoded=true
+10-01 11:59:11.972 10505 10505 I SnapshotRepro: REQUEST 10 bearing=32.352
+10-01 11:59:12.008 10505 10505 I SnapshotRepro: FRAME 10 durationMs=36 jpegBytes=17518 encoded=true
+10-01 11:59:12.974 10505 10505 I SnapshotRepro: REQUEST 11 bearing=35.358
+10-01 11:59:13.018 10505 10505 I SnapshotRepro: FRAME 11 durationMs=40 jpegBytes=17870 encoded=true
+10-01 11:59:13.977 10505 10505 I SnapshotRepro: REQUEST 12 bearing=38.364000000000004
+10-01 11:59:14.039 10505 10505 I SnapshotRepro: FRAME 12 durationMs=62 jpegBytes=17883 encoded=true
+10-01 11:59:14.980 10505 10505 I SnapshotRepro: REQUEST 13 bearing=41.373
+10-01 11:59:15.039 10505 10505 I SnapshotRepro: FRAME 13 durationMs=60 jpegBytes=18522 encoded=true
+10-01 11:59:15.981 10505 10505 I SnapshotRepro: REQUEST 14 bearing=44.376
+10-01 11:59:16.028 10505 10505 I SnapshotRepro: FRAME 14 durationMs=48 jpegBytes=18506 encoded=true
+10-01 11:59:16.982 10505 10505 I SnapshotRepro: REQUEST 15 bearing=47.379
+10-01 11:59:17.062 10505 10505 I SnapshotRepro: FRAME 15 durationMs=81 jpegBytes=18578 encoded=true
+10-01 11:59:17.982 10505 10505 I SnapshotRepro: REQUEST 16 bearing=50.382
+10-01 11:59:18.039 10505 10505 I SnapshotRepro: FRAME 16 durationMs=57 jpegBytes=18744 encoded=true
+10-01 11:59:18.995 10505 10505 I SnapshotRepro: REQUEST 17 bearing=53.418
+10-01 11:59:19.180 10505 10505 I SnapshotRepro: FRAME 17 durationMs=186 jpegBytes=18742 encoded=true
+10-01 11:59:19.998 10505 10505 I SnapshotRepro: REQUEST 18 bearing=56.427
+10-01 11:59:20.121 10505 10505 I SnapshotRepro: FRAME 18 durationMs=123 jpegBytes=18449 encoded=true
+10-01 11:59:21.000 10505 10505 I SnapshotRepro: REQUEST 19 bearing=59.433
+10-01 11:59:21.086 10505 10505 I SnapshotRepro: FRAME 19 durationMs=86 jpegBytes=18190 encoded=true
+10-01 11:59:22.004 10505 10505 I SnapshotRepro: REQUEST 20 bearing=62.442
+10-01 11:59:22.182 10505 10505 I SnapshotRepro: FRAME 20 durationMs=179 jpegBytes=18167 encoded=true
+10-01 11:59:23.008 10505 10505 I SnapshotRepro: REQUEST 21 bearing=65.451
+10-01 11:59:23.116 10505 10505 I SnapshotRepro: FRAME 21 durationMs=111 jpegBytes=18108 encoded=true
+10-01 11:59:24.008 10505 10505 I SnapshotRepro: REQUEST 22 bearing=68.45400000000001
+10-01 11:59:24.071 10505 10505 I SnapshotRepro: FRAME 22 durationMs=65 jpegBytes=18028 encoded=true
+10-01 11:59:25.014 10505 10505 I SnapshotRepro: REQUEST 23 bearing=71.47200000000001
+10-01 11:59:25.069 10505 10505 I SnapshotRepro: FRAME 23 durationMs=57 jpegBytes=18055 encoded=true
+10-01 11:59:26.017 10505 10505 I SnapshotRepro: REQUEST 24 bearing=74.484
+10-01 11:59:26.128 10505 10505 I SnapshotRepro: FRAME 24 durationMs=111 jpegBytes=18293 encoded=true
+10-01 11:59:27.020 10505 10505 I SnapshotRepro: REQUEST 25 bearing=77.493
+10-01 11:59:27.106 10505 10505 I SnapshotRepro: FRAME 25 durationMs=86 jpegBytes=18479 encoded=true
+10-01 11:59:28.022 10505 10505 I SnapshotRepro: REQUEST 26 bearing=80.496
+10-01 11:59:28.077 10505 10505 I SnapshotRepro: FRAME 26 durationMs=55 jpegBytes=18477 encoded=true
+10-01 11:59:29.027 10505 10505 I SnapshotRepro: REQUEST 27 bearing=83.508
+10-01 11:59:29.077 10505 10505 I SnapshotRepro: FRAME 27 durationMs=53 jpegBytes=18448 encoded=true
+10-01 11:59:30.026 10505 10505 I SnapshotRepro: REQUEST 28 bearing=86.51400000000001
+10-01 11:59:30.083 10505 10505 I SnapshotRepro: FRAME 28 durationMs=57 jpegBytes=18665 encoded=true
+10-01 11:59:31.029 10505 10505 I SnapshotRepro: REQUEST 29 bearing=89.52
+10-01 11:59:31.067 10505 10505 I SnapshotRepro: FRAME 29 durationMs=39 jpegBytes=18483 encoded=true
+10-01 11:59:32.030 10505 10505 I SnapshotRepro: REQUEST 30 bearing=92.523
+10-01 11:59:32.084 10505 10505 I SnapshotRepro: FRAME 30 durationMs=55 jpegBytes=18012 encoded=true
+10-01 11:59:33.031 10505 10505 I SnapshotRepro: REQUEST 31 bearing=95.526
+10-01 11:59:33.095 10505 10505 I SnapshotRepro: FRAME 31 durationMs=65 jpegBytes=17623 encoded=true
+10-01 11:59:34.033 10505 10505 I SnapshotRepro: REQUEST 32 bearing=98.532
+10-01 11:59:34.096 10505 10505 I SnapshotRepro: FRAME 32 durationMs=62 jpegBytes=17671 encoded=true
+10-01 11:59:35.036 10505 10505 I SnapshotRepro: REQUEST 33 bearing=101.54100000000001
+10-01 11:59:35.142 10505 10505 I SnapshotRepro: FRAME 33 durationMs=106 jpegBytes=17662 encoded=true
+10-01 11:59:36.038 10505 10505 I SnapshotRepro: REQUEST 34 bearing=104.547
+10-01 11:59:36.116 10505 10505 I SnapshotRepro: FRAME 34 durationMs=78 jpegBytes=17830 encoded=true
+10-01 11:59:37.041 10505 10505 I SnapshotRepro: REQUEST 35 bearing=107.55000000000001
+10-01 11:59:37.093 10505 10505 I SnapshotRepro: FRAME 35 durationMs=54 jpegBytes=17990 encoded=true
+10-01 11:59:38.043 10505 10505 I SnapshotRepro: REQUEST 36 bearing=110.559
+10-01 11:59:38.165 10505 10505 I SnapshotRepro: FRAME 36 durationMs=122 jpegBytes=18508 encoded=true
+10-01 11:59:39.045 10505 10505 I SnapshotRepro: REQUEST 37 bearing=113.565
+10-01 11:59:39.089 10505 10505 I SnapshotRepro: FRAME 37 durationMs=45 jpegBytes=18257 encoded=true
+10-01 11:59:40.046 10505 10505 I SnapshotRepro: REQUEST 38 bearing=116.568
+10-01 11:59:40.111 10505 10505 I SnapshotRepro: FRAME 38 durationMs=66 jpegBytes=17641 encoded=true
+10-01 11:59:41.048 10505 10505 I SnapshotRepro: REQUEST 39 bearing=119.577
+10-01 11:59:41.107 10505 10505 I SnapshotRepro: FRAME 39 durationMs=60 jpegBytes=17617 encoded=true
+10-01 11:59:42.050 10505 10505 I SnapshotRepro: REQUEST 40 bearing=122.58000000000001
+10-01 11:59:42.098 10505 10505 I SnapshotRepro: FRAME 40 durationMs=49 jpegBytes=17435 encoded=true
+10-01 11:59:43.051 10505 10505 I SnapshotRepro: REQUEST 41 bearing=125.586
+10-01 11:59:43.083 10505 10505 I SnapshotRepro: FRAME 41 durationMs=33 jpegBytes=17460 encoded=true
+10-01 11:59:44.052 10505 10505 I SnapshotRepro: REQUEST 42 bearing=128.589
+10-01 11:59:44.102 10505 10505 I SnapshotRepro: FRAME 42 durationMs=51 jpegBytes=17001 encoded=true
+10-01 11:59:45.054 10505 10505 I SnapshotRepro: REQUEST 43 bearing=131.595
+10-01 11:59:45.095 10505 10505 I SnapshotRepro: FRAME 43 durationMs=42 jpegBytes=17203 encoded=true
+10-01 11:59:46.055 10505 10505 I SnapshotRepro: REQUEST 44 bearing=134.598
+10-01 11:59:46.111 10505 10505 I SnapshotRepro: FRAME 44 durationMs=56 jpegBytes=17241 encoded=true
+10-01 11:59:47.057 10505 10505 I SnapshotRepro: REQUEST 45 bearing=137.601
+10-01 11:59:47.086 10505 10505 I SnapshotRepro: FRAME 45 durationMs=31 jpegBytes=17226 encoded=true
+10-01 11:59:48.060 10505 10505 I SnapshotRepro: REQUEST 46 bearing=140.61
+10-01 11:59:48.116 10505 10505 I SnapshotRepro: FRAME 46 durationMs=58 jpegBytes=17151 encoded=true
+10-01 11:59:49.060 10505 10505 I SnapshotRepro: REQUEST 47 bearing=143.613
+10-01 11:59:49.095 10505 10505 I SnapshotRepro: FRAME 47 durationMs=35 jpegBytes=16960 encoded=true
+10-01 11:59:50.062 10505 10505 I SnapshotRepro: REQUEST 48 bearing=146.61599999999999
+10-01 11:59:50.113 10505 10505 I SnapshotRepro: FRAME 48 durationMs=52 jpegBytes=17069 encoded=true
+10-01 11:59:51.063 10505 10505 I SnapshotRepro: REQUEST 49 bearing=149.622
+10-01 11:59:51.093 10505 10505 I SnapshotRepro: FRAME 49 durationMs=30 jpegBytes=17001 encoded=true
+10-01 11:59:52.066 10505 10505 I SnapshotRepro: REQUEST 50 bearing=152.628
+10-01 11:59:52.109 10505 10505 I SnapshotRepro: FRAME 50 durationMs=45 jpegBytes=17411 encoded=true
+10-01 11:59:53.066 10505 10505 I SnapshotRepro: REQUEST 51 bearing=155.631
+10-01 11:59:53.120 10505 10505 I SnapshotRepro: FRAME 51 durationMs=54 jpegBytes=17260 encoded=true
+10-01 11:59:54.066 10505 10505 I SnapshotRepro: REQUEST 52 bearing=158.634
+10-01 11:59:54.095 10505 10505 I SnapshotRepro: FRAME 52 durationMs=29 jpegBytes=17293 encoded=true
+10-01 11:59:55.069 10505 10505 I SnapshotRepro: REQUEST 53 bearing=161.64000000000001
+10-01 11:59:55.114 10505 10505 I SnapshotRepro: FRAME 53 durationMs=45 jpegBytes=17193 encoded=true
+10-01 11:59:56.070 10505 10505 I SnapshotRepro: REQUEST 54 bearing=164.643
+10-01 11:59:56.101 10505 10505 I SnapshotRepro: FRAME 54 durationMs=30 jpegBytes=17251 encoded=true
+10-01 11:59:57.072 10505 10505 I SnapshotRepro: REQUEST 55 bearing=167.649
+10-01 11:59:57.092 10505 10505 I SnapshotRepro: FRAME 55 durationMs=21 jpegBytes=17530 encoded=true
+10-01 11:59:58.076 10505 10505 I SnapshotRepro: REQUEST 56 bearing=170.65800000000002
+10-01 11:59:58.130 10505 10505 I SnapshotRepro: FRAME 56 durationMs=55 jpegBytes=17650 encoded=true
+10-01 11:59:59.077 10505 10505 I SnapshotRepro: REQUEST 57 bearing=173.661
+10-01 11:59:59.100 10505 10505 I SnapshotRepro: FRAME 57 durationMs=23 jpegBytes=17505 encoded=true
+10-01 12:00:00.077 10505 10505 I SnapshotRepro: REQUEST 58 bearing=176.667
+10-01 12:00:00.095 10505 10505 I SnapshotRepro: FRAME 58 durationMs=17 jpegBytes=17508 encoded=true
+10-01 12:00:01.080 10505 10505 I SnapshotRepro: REQUEST 59 bearing=179.673
+10-01 12:00:01.103 10505 10505 I SnapshotRepro: FRAME 59 durationMs=24 jpegBytes=17411 encoded=true
+10-01 12:00:02.081 10505 10505 I SnapshotRepro: REQUEST 60 bearing=182.676
+10-01 12:00:02.109 10505 10505 I SnapshotRepro: FRAME 60 durationMs=29 jpegBytes=17073 encoded=true
+10-01 12:00:03.083 10505 10505 I SnapshotRepro: REQUEST 61 bearing=185.68200000000002
+10-01 12:00:03.119 10505 10505 I SnapshotRepro: FRAME 61 durationMs=37 jpegBytes=16770 encoded=true
+10-01 12:00:04.085 10505 10505 I SnapshotRepro: REQUEST 62 bearing=188.688
+10-01 12:00:04.111 10505 10505 I SnapshotRepro: FRAME 62 durationMs=27 jpegBytes=16879 encoded=true
+10-01 12:00:05.086 10505 10505 I SnapshotRepro: REQUEST 63 bearing=191.694
+10-01 12:00:05.169 10505 10505 I SnapshotRepro: FRAME 63 durationMs=83 jpegBytes=17249 encoded=true
+10-01 12:00:06.089 10505 10505 I SnapshotRepro: REQUEST 64 bearing=194.70000000000002
+10-01 12:00:06.112 10505 10505 I SnapshotRepro: FRAME 64 durationMs=24 jpegBytes=17241 encoded=true
+10-01 12:00:07.091 10505 10505 I SnapshotRepro: REQUEST 65 bearing=197.70899999999997
+10-01 12:00:07.128 10505 10505 I SnapshotRepro: FRAME 65 durationMs=36 jpegBytes=17265 encoded=true
+10-01 12:00:08.094 10505 10505 I SnapshotRepro: REQUEST 66 bearing=200.712
+10-01 12:00:08.125 10505 10505 I SnapshotRepro: FRAME 66 durationMs=33 jpegBytes=17279 encoded=true
+10-01 12:00:09.095 10505 10505 I SnapshotRepro: REQUEST 67 bearing=203.718
+10-01 12:00:09.122 10505 10505 I SnapshotRepro: FRAME 67 durationMs=27 jpegBytes=17548 encoded=true
+10-01 12:00:10.096 10505 10505 I SnapshotRepro: REQUEST 68 bearing=206.721
+10-01 12:00:10.115 10505 10505 I SnapshotRepro: FRAME 68 durationMs=20 jpegBytes=17420 encoded=true
+10-01 12:00:11.098 10505 10505 I SnapshotRepro: REQUEST 69 bearing=209.724
+10-01 12:00:11.139 10505 10505 I SnapshotRepro: FRAME 69 durationMs=41 jpegBytes=17509 encoded=true
+10-01 12:00:12.099 10505 10505 I SnapshotRepro: REQUEST 70 bearing=212.73
+10-01 12:00:12.127 10505 10505 I SnapshotRepro: FRAME 70 durationMs=29 jpegBytes=17561 encoded=true
+10-01 12:00:13.100 10505 10505 I SnapshotRepro: REQUEST 71 bearing=215.736
+10-01 12:00:13.127 10505 10505 I SnapshotRepro: FRAME 71 durationMs=26 jpegBytes=17580 encoded=true
+10-01 12:00:14.102 10505 10505 I SnapshotRepro: REQUEST 72 bearing=218.73899999999998
+10-01 12:00:14.192 10505 10505 I SnapshotRepro: FRAME 72 durationMs=91 jpegBytes=17288 encoded=true
+10-01 12:00:15.103 10505 10505 I SnapshotRepro: REQUEST 73 bearing=221.742
+10-01 12:00:15.137 10505 10505 I SnapshotRepro: FRAME 73 durationMs=35 jpegBytes=17394 encoded=true
+10-01 12:00:16.105 10505 10505 I SnapshotRepro: REQUEST 74 bearing=224.748
+10-01 12:00:16.138 10505 10505 I SnapshotRepro: FRAME 74 durationMs=34 jpegBytes=17397 encoded=true
+10-01 12:00:17.106 10505 10505 I SnapshotRepro: REQUEST 75 bearing=227.751
+10-01 12:00:17.127 10505 10505 I SnapshotRepro: FRAME 75 durationMs=22 jpegBytes=17697 encoded=true
+10-01 12:00:18.107 10505 10505 I SnapshotRepro: REQUEST 76 bearing=230.75400000000002
+10-01 12:00:18.130 10505 10505 I SnapshotRepro: FRAME 76 durationMs=23 jpegBytes=17912 encoded=true
+10-01 12:00:19.110 10505 10505 I SnapshotRepro: REQUEST 77 bearing=233.763
+10-01 12:00:19.168 10505 10505 I SnapshotRepro: FRAME 77 durationMs=59 jpegBytes=17934 encoded=true
+10-01 12:00:20.111 10505 10505 I SnapshotRepro: REQUEST 78 bearing=236.766
+10-01 12:00:20.147 10505 10505 I SnapshotRepro: FRAME 78 durationMs=36 jpegBytes=17845 encoded=true
+10-01 12:00:21.112 10505 10505 I SnapshotRepro: REQUEST 79 bearing=239.769
+10-01 12:00:21.134 10505 10505 I SnapshotRepro: FRAME 79 durationMs=23 jpegBytes=17817 encoded=true
+10-01 12:00:22.113 10505 10505 I SnapshotRepro: REQUEST 80 bearing=242.772
+10-01 12:00:22.167 10505 10505 I SnapshotRepro: FRAME 80 durationMs=55 jpegBytes=17499 encoded=true
+10-01 12:00:23.115 10505 10505 I SnapshotRepro: REQUEST 81 bearing=245.778
+10-01 12:00:23.155 10505 10505 I SnapshotRepro: FRAME 81 durationMs=41 jpegBytes=17496 encoded=true
+10-01 12:00:24.117 10505 10505 I SnapshotRepro: REQUEST 82 bearing=248.78400000000002
+10-01 12:00:24.153 10505 10505 I SnapshotRepro: FRAME 82 durationMs=36 jpegBytes=17600 encoded=true
+10-01 12:00:25.118 10505 10505 I SnapshotRepro: REQUEST 83 bearing=251.78699999999998
+10-01 12:00:25.176 10505 10505 I SnapshotRepro: FRAME 83 durationMs=58 jpegBytes=17534 encoded=true
+10-01 12:00:26.120 10505 10505 I SnapshotRepro: REQUEST 84 bearing=254.793
+10-01 12:00:26.157 10505 10505 I SnapshotRepro: FRAME 84 durationMs=37 jpegBytes=17658 encoded=true
+10-01 12:00:27.125 10505 10505 I SnapshotRepro: REQUEST 85 bearing=257.80199999999996
+10-01 12:00:27.164 10505 10505 I SnapshotRepro: FRAME 85 durationMs=41 jpegBytes=18124 encoded=true
+10-01 12:00:28.126 10505 10505 I SnapshotRepro: REQUEST 86 bearing=260.811
+10-01 12:00:28.157 10505 10505 I SnapshotRepro: FRAME 86 durationMs=31 jpegBytes=18049 encoded=true
+10-01 12:00:29.127 10505 10505 I SnapshotRepro: REQUEST 87 bearing=263.817
+10-01 12:00:29.145 10505 10505 I SnapshotRepro: FRAME 87 durationMs=17 jpegBytes=18180 encoded=true
+10-01 12:00:30.130 10505 10505 I SnapshotRepro: REQUEST 88 bearing=266.82599999999996
+10-01 12:00:30.177 10505 10505 I SnapshotRepro: FRAME 88 durationMs=46 jpegBytes=18206 encoded=true
+10-01 12:00:31.132 10505 10505 I SnapshotRepro: REQUEST 89 bearing=269.829
+10-01 12:00:31.175 10505 10505 I SnapshotRepro: FRAME 89 durationMs=43 jpegBytes=18172 encoded=true
+10-01 12:00:32.133 10505 10505 I SnapshotRepro: REQUEST 90 bearing=272.832
+10-01 12:00:32.165 10505 10505 I SnapshotRepro: FRAME 90 durationMs=33 jpegBytes=18025 encoded=true
+10-01 12:00:33.133 10505 10505 I SnapshotRepro: REQUEST 91 bearing=275.83500000000004
+10-01 12:00:33.151 10505 10505 I SnapshotRepro: FRAME 91 durationMs=18 jpegBytes=18123 encoded=true
+10-01 12:00:34.135 10505 10505 I SnapshotRepro: REQUEST 92 bearing=278.841
+10-01 12:00:34.164 10505 10505 I SnapshotRepro: FRAME 92 durationMs=29 jpegBytes=17360 encoded=true
+10-01 12:00:35.138 10505 10505 I SnapshotRepro: REQUEST 93 bearing=281.847
+10-01 12:00:35.161 10505 10505 I SnapshotRepro: FRAME 93 durationMs=23 jpegBytes=17429 encoded=true
+10-01 12:00:36.140 10505 10505 I SnapshotRepro: REQUEST 94 bearing=284.853
+10-01 12:00:36.170 10505 10505 I SnapshotRepro: FRAME 94 durationMs=31 jpegBytes=17543 encoded=true
+10-01 12:00:37.142 10505 10505 I SnapshotRepro: REQUEST 95 bearing=287.85900000000004
+10-01 12:00:37.181 10505 10505 I SnapshotRepro: FRAME 95 durationMs=40 jpegBytes=17337 encoded=true
+10-01 12:00:38.144 10505 10505 I SnapshotRepro: REQUEST 96 bearing=290.865
+10-01 12:00:38.212 10505 10505 I SnapshotRepro: FRAME 96 durationMs=69 jpegBytes=17380 encoded=true
+10-01 12:00:39.146 10505 10505 I SnapshotRepro: REQUEST 97 bearing=293.868
+10-01 12:00:39.184 10505 10505 I SnapshotRepro: FRAME 97 durationMs=39 jpegBytes=16652 encoded=true
+10-01 12:00:40.146 10505 10505 I SnapshotRepro: REQUEST 98 bearing=296.874
+10-01 12:00:40.201 10505 10505 I SnapshotRepro: FRAME 98 durationMs=55 jpegBytes=16903 encoded=true
+10-01 12:00:41.148 10505 10505 I SnapshotRepro: REQUEST 99 bearing=299.877
+10-01 12:00:41.231 10505 10505 I SnapshotRepro: FRAME 99 durationMs=83 jpegBytes=17193 encoded=true
+10-01 12:00:42.148 10505 10505 I SnapshotRepro: REQUEST 100 bearing=302.88
+10-01 12:00:42.210 10505 10505 I SnapshotRepro: FRAME 100 durationMs=62 jpegBytes=17257 encoded=true
+10-01 12:00:43.151 10505 10505 I SnapshotRepro: REQUEST 101 bearing=305.886
+10-01 12:00:43.201 10505 10505 I SnapshotRepro: FRAME 101 durationMs=51 jpegBytes=17011 encoded=true
+10-01 12:00:44.153 10505 10505 I SnapshotRepro: REQUEST 102 bearing=308.892
+10-01 12:00:44.225 10505 10505 I SnapshotRepro: FRAME 102 durationMs=73 jpegBytes=16575 encoded=true
+10-01 12:00:45.157 10505 10505 I SnapshotRepro: REQUEST 103 bearing=311.904
+10-01 12:00:45.240 10505 10505 I SnapshotRepro: FRAME 103 durationMs=83 jpegBytes=16683 encoded=true
+10-01 12:00:46.159 10505 10505 I SnapshotRepro: REQUEST 104 bearing=314.91
+10-01 12:00:46.209 10505 10505 I SnapshotRepro: FRAME 104 durationMs=51 jpegBytes=17158 encoded=true
+10-01 12:00:47.160 10505 10505 I SnapshotRepro: REQUEST 105 bearing=317.913
+10-01 12:00:47.201 10505 10505 I SnapshotRepro: FRAME 105 durationMs=41 jpegBytes=17287 encoded=true
+10-01 12:00:48.165 10505 10505 I SnapshotRepro: REQUEST 106 bearing=320.928
+10-01 12:00:48.277 10505 10505 I SnapshotRepro: FRAME 106 durationMs=113 jpegBytes=17213 encoded=true
+10-01 12:00:49.168 10505 10505 I SnapshotRepro: REQUEST 107 bearing=323.934
+10-01 12:00:49.218 10505 10505 I SnapshotRepro: FRAME 107 durationMs=51 jpegBytes=17183 encoded=true
+10-01 12:00:50.170 10505 10505 I SnapshotRepro: REQUEST 108 bearing=326.943
+10-01 12:00:50.236 10505 10505 I SnapshotRepro: FRAME 108 durationMs=67 jpegBytes=17317 encoded=true
+10-01 12:00:51.180 10505 10505 I SnapshotRepro: REQUEST 109 bearing=329.973
+10-01 12:00:51.291 10505 10505 I SnapshotRepro: FRAME 109 durationMs=112 jpegBytes=17646 encoded=true
+10-01 12:00:52.182 10505 10505 I SnapshotRepro: REQUEST 110 bearing=332.976
+10-01 12:00:52.232 10505 10505 I SnapshotRepro: FRAME 110 durationMs=52 jpegBytes=17620 encoded=true
+10-01 12:00:53.182 10505 10505 I SnapshotRepro: REQUEST 111 bearing=335.982
+10-01 12:00:53.251 10505 10505 I SnapshotRepro: FRAME 111 durationMs=68 jpegBytes=17769 encoded=true
+10-01 12:00:54.185 10505 10505 I SnapshotRepro: REQUEST 112 bearing=338.988
+10-01 12:00:54.232 10505 10505 I SnapshotRepro: FRAME 112 durationMs=48 jpegBytes=17614 encoded=true
+10-01 12:00:55.192 10505 10505 I SnapshotRepro: REQUEST 113 bearing=342.0
+10-01 12:00:55.248 10505 10505 I SnapshotRepro: FRAME 113 durationMs=59 jpegBytes=17747 encoded=true
+10-01 12:00:56.191 10505 10505 I SnapshotRepro: REQUEST 114 bearing=345.00600000000003
+10-01 12:00:56.259 10505 10505 I SnapshotRepro: FRAME 114 durationMs=69 jpegBytes=18079 encoded=true
+10-01 12:00:57.191 10505 10505 I SnapshotRepro: REQUEST 115 bearing=348.00600000000003
+10-01 12:00:57.285 10505 10505 I SnapshotRepro: FRAME 115 durationMs=95 jpegBytes=18000 encoded=true
+10-01 12:00:58.193 10505 10505 I SnapshotRepro: REQUEST 116 bearing=351.012
+10-01 12:00:58.245 10505 10505 I SnapshotRepro: FRAME 116 durationMs=53 jpegBytes=17890 encoded=true
+10-01 12:00:59.194 10505 10505 I SnapshotRepro: REQUEST 117 bearing=354.015
+10-01 12:00:59.262 10505 10505 I SnapshotRepro: FRAME 117 durationMs=68 jpegBytes=17733 encoded=true
+10-01 12:01:00.194 10505 10505 I SnapshotRepro: REQUEST 118 bearing=357.015
+10-01 12:01:00.248 10505 10505 I SnapshotRepro: FRAME 118 durationMs=53 jpegBytes=17512 encoded=true
+10-01 12:01:01.196 10505 10505 I SnapshotRepro: REQUEST 119 bearing=0.021
+10-01 12:01:01.259 10505 10505 I SnapshotRepro: FRAME 119 durationMs=64 jpegBytes=17642 encoded=true
+10-01 12:01:02.197 10505 10505 I SnapshotRepro: REQUEST 120 bearing=3.024
+10-01 12:01:02.239 10505 10505 I SnapshotRepro: FRAME 120 durationMs=43 jpegBytes=18001 encoded=true
+10-01 12:01:02.239 10505 10505 I SnapshotRepro: COMPLETE: 120 snapshots, no crash observed

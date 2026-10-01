@@ -1,0 +1,27 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'org.example.maplibrerepro'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'org.example.maplibrerepro'
+        minSdk 23
+        targetSdk 36
+        versionCode 1
+        versionName '1.0'
+    }
+}
+
+dependencies {
+    // Keep the published SDK's transitive dependencies when replacing its AAR.
+    def sdkVersion = providers.gradleProperty('maplibreVersion').getOrElse('11.11.0')
+    def localAar = providers.gradleProperty('maplibreAar').orNull
+    if (localAar != null) {
+        implementation files(localAar)
+        implementation("org.maplibre.gl:android-sdk:${sdkVersion}") {
+            artifact { type = 'pom'; extension = 'pom' }
+        }
+    } else {
+        implementation "org.maplibre.gl:android-sdk:${sdkVersion}"
+    }
+}

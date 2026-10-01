@@ -1,0 +1,9 @@
+{
+  "staleExit": 0,
+  "fixedExit": 0,
+  "model": "SM-S921B",
+  "abi": "arm64-v8a",
+  "fingerprint": "samsung/e1sxeea/e1s:16/BP4A.251205.006/S921BXXSHDZH3:user/release-keys",
+  "emulator": false,
+  "binarySha256": "216997E62A2E87296B56005FE419CF831395DD73918C9371F1369A3355941436"
+}

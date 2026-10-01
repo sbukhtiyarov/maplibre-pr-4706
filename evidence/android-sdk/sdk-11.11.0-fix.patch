@@ -1,0 +1,83 @@
+diff --git a/src/mbgl/gl/drawable_gl.cpp b/src/mbgl/gl/drawable_gl.cpp
+index c335ceb..335dc30 100644
+--- a/src/mbgl/gl/drawable_gl.cpp
++++ b/src/mbgl/gl/drawable_gl.cpp
+@@ -13,6 +13,13 @@
+ namespace mbgl {
+ namespace gl {
+ 
++struct IndexBufferGL : public gfx::IndexBufferBase {
++    IndexBufferGL(std::unique_ptr<gfx::IndexBuffer>&& buffer_)
++        : buffer(std::move(buffer_)) {}
++    ~IndexBufferGL() override = default;
++    std::unique_ptr<mbgl::gfx::IndexBuffer> buffer;
++};
++
+ DrawableGL::DrawableGL(std::string name_)
+     : Drawable(std::move(name_)),
+       impl(std::make_unique<Impl>()) {}
+@@ -67,7 +74,11 @@ void DrawableGL::draw(PaintParameters& parameters) const {
+         const auto& glSeg = static_cast<DrawSegmentGL&>(*seg);
+         const auto& mlSeg = glSeg.getSegment();
+         if (mlSeg.indexLength > 0 && glSeg.getVertexArray().isValid()) {
+-            context.bindVertexArray = glSeg.getVertexArray().getID();
++            // Shared index vectors can replace their GPU buffer after this VAO was created
++            // (for example when symbols are sorted after a camera bearing change).
++            // Reconcile the cached element binding with the live buffer before drawing.
++            const auto& indexBuffer = static_cast<const IndexBufferGL&>(*impl->indexes->getBuffer());
++            glSeg.getVertexArray().bindIndexBuffer(context, *indexBuffer.buffer);
+             context.draw(glSeg.getMode(), mlSeg.indexOffset, mlSeg.indexLength);
+         }
+     }
+@@ -133,14 +144,6 @@ void DrawableGL::setVertexAttrId(const size_t id) {
+     impl->vertexAttrId = id;
+ }
+ 
+-struct IndexBufferGL : public gfx::IndexBufferBase {
+-    IndexBufferGL(std::unique_ptr<gfx::IndexBuffer>&& buffer_)
+-        : buffer(std::move(buffer_)) {}
+-    ~IndexBufferGL() override = default;
+-
+-    std::unique_ptr<mbgl::gfx::IndexBuffer> buffer;
+-};
+-
+ void DrawableGL::upload(gfx::UploadPass& uploadPass) {
+     if (isCustom) {
+         return;
+diff --git a/src/mbgl/gl/vertex_array.cpp b/src/mbgl/gl/vertex_array.cpp
+index 4705b8b..42dcf94 100644
+--- a/src/mbgl/gl/vertex_array.cpp
++++ b/src/mbgl/gl/vertex_array.cpp
+@@ -6,8 +6,7 @@ namespace mbgl {
+ namespace gl {
+ 
+ void VertexArray::bind(Context& context, const gfx::IndexBuffer& indexBuffer, const AttributeBindingArray& bindings) {
+-    context.bindVertexArray = state->vertexArray;
+-    state->indexBuffer = indexBuffer.getResource<gl::IndexBufferResource>().buffer;
++    bindIndexBuffer(context, indexBuffer);
+ 
+     state->bindings.reserve(bindings.size());
+ 
+@@ -20,5 +19,10 @@ void VertexArray::bind(Context& context, const gfx::IndexBuffer& indexBuffer, co
+     }
+ }
+ 
++void VertexArray::bindIndexBuffer(Context& context, const gfx::IndexBuffer& indexBuffer) const {
++    context.bindVertexArray = state->vertexArray;
++    state->indexBuffer = indexBuffer.getResource<gl::IndexBufferResource>().buffer;
++}
++
+ } // namespace gl
+ } // namespace mbgl
+diff --git a/src/mbgl/gl/vertex_array.hpp b/src/mbgl/gl/vertex_array.hpp
+index 0179664..2b6fb79 100644
+--- a/src/mbgl/gl/vertex_array.hpp
++++ b/src/mbgl/gl/vertex_array.hpp
+@@ -62,6 +62,7 @@ public:
+         : state(std::move(other.state)) {}
+ 
+     void bind(Context&, const gfx::IndexBuffer&, const AttributeBindingArray&);
++    void bindIndexBuffer(Context&, const gfx::IndexBuffer&) const;
+ 
+     VertexArray& operator=(VertexArray&& other) {
+         state = std::move(other.state);

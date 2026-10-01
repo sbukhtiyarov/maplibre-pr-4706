@@ -1,0 +1,5 @@
+mode=fixed renderer=Android Emulator OpenGL ES Translator (Intel(R) Graphics) version=OpenGL ES 3.0 (4.5.0 - Build 32.0.101.8826)
+old=2 replacement=3 bound=3 oldIsBuffer=0
+calling glDrawElements
+pixel=0,255,0,255
+PASS

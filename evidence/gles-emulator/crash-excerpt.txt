@@ -1,0 +1,20 @@
+09-28 17:10:22.353 21451 21451 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x30 in tid 21451 (vao-repro), pid 21451 (vao-repro)
+09-28 17:10:22.390 21455 21455 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CE2A.260420.050/16231978:user/dev-keys'
+09-28 17:10:22.390 21455 21455 F DEBUG   : Page size: 16384 bytes
+09-28 17:10:22.390 21455 21455 F DEBUG   : Executable: /data/local/tmp/vao-repro
+09-28 17:10:22.390 21455 21455 F DEBUG   : Cmdline: /data/local/tmp/vao-repro stale
+09-28 17:10:22.390 21455 21455 F DEBUG   : pid: 21451, ppid: 536, tid: 21451, name: vao-repro  >>> /data/local/tmp/vao-repro <<<
+09-28 17:10:22.390 21455 21455 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000030 (read)
+09-28 17:10:22.390 21455 21455 F DEBUG   :   NOTE:   /data/local/tmp/vao-repro
+09-28 17:10:22.390 21455 21455 F DEBUG   :       #00 pc 0000000000096917  /vendor/lib64/libGLESv2_enc.so (GL2Encoder::s_glDrawElements(void*, unsigned int, int, unsigned int, void const*)+535) (BuildId: 0af34203490f9912da39acc0ba8771ad)
+09-28 17:10:22.390 21455 21455 F DEBUG   :       #01 pc 0000000000005a92  /data/local/tmp/vao-repro
+09-28 17:13:31.026 21598 21598 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x30 in tid 21598 (vao-repro), pid 21598 (vao-repro)
+09-28 17:13:31.077 21602 21602 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CE2A.260420.050/16231978:user/dev-keys'
+09-28 17:13:31.077 21602 21602 F DEBUG   : Page size: 16384 bytes
+09-28 17:13:31.077 21602 21602 F DEBUG   : Executable: /data/local/tmp/vao-repro
+09-28 17:13:31.077 21602 21602 F DEBUG   : Cmdline: /data/local/tmp/vao-repro stale
+09-28 17:13:31.077 21602 21602 F DEBUG   : pid: 21598, ppid: 536, tid: 21598, name: vao-repro  >>> /data/local/tmp/vao-repro <<<
+09-28 17:13:31.077 21602 21602 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000030 (read)
+09-28 17:13:31.077 21602 21602 F DEBUG   :   NOTE:   /data/local/tmp/vao-repro
+09-28 17:13:31.077 21602 21602 F DEBUG   :       #00 pc 0000000000096917  /vendor/lib64/libGLESv2_enc.so (GL2Encoder::s_glDrawElements(void*, unsigned int, int, unsigned int, void const*)+535) (BuildId: 0af34203490f9912da39acc0ba8771ad)
+09-28 17:13:31.077 21602 21602 F DEBUG   :       #01 pc 0000000000005a92  /data/local/tmp/vao-repro

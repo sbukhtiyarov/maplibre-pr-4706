@@ -1,0 +1,38 @@
+--------- beginning of crash
+10-01 11:53:39.873 10198 10229 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x30 in tid 10229 (Snapshotter), pid 10198 (e.maplibrerepro)
+10-01 11:53:40.714 10269 10269 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-01 11:53:40.714 10269 10269 F DEBUG   : Build fingerprint: 'google/sdk_gphone16k_x86_64/emu64xa16k:17/CE2A.260420.050/16231978:user/dev-keys'
+10-01 11:53:40.714 10269 10269 F DEBUG   : Kernel Release: '6.12.81-android16-6-g4f69fc7b210c-ab16167562'
+10-01 11:53:40.714 10269 10269 F DEBUG   : Revision: '0'
+10-01 11:53:40.714 10269 10269 F DEBUG   : ABI: 'x86_64'
+10-01 11:53:40.714 10269 10269 F DEBUG   : Timestamp: 2026-10-01 11:53:40.051257563+0300
+10-01 11:53:40.714 10269 10269 F DEBUG   : Process uptime: 7s
+10-01 11:53:40.714 10269 10269 F DEBUG   : Page size: 16384 bytes
+10-01 11:53:40.714 10269 10269 F DEBUG   : Executable: /system/bin/app_process64
+10-01 11:53:40.714 10269 10269 F DEBUG   : Cmdline: org.example.maplibrerepro
+10-01 11:53:40.714 10269 10269 F DEBUG   : pid: 10198, ppid: 457, tid: 10229, name: Snapshotter  >>> org.example.maplibrerepro <<<
+10-01 11:53:40.714 10269 10269 F DEBUG   : uid: 10232
+10-01 11:53:40.714 10269 10269 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000030 (read)
+10-01 11:53:40.714 10269 10269 F DEBUG   : Cause: null pointer dereference
+10-01 11:53:40.714 10269 10269 F DEBUG   :     rax 0000000000000000  rbx 000077cc2a67e0a0  rcx 0000000000000002  rdx 0000000000000001
+10-01 11:53:40.714 10269 10269 F DEBUG   :     r8  0000000000000000  r9  000077cb252aa700  r10 0000000000000002  r11 000077cb252b5590
+10-01 11:53:40.714 10269 10269 F DEBUG   :     r12 000000000000005a  r13 000077cd2a658e18  r14 0000000000001403  r15 0000000000000000
+10-01 11:53:40.714 10269 10269 F DEBUG   :     rdi 000077cb6a643158  rsi 00000000000001a3
+10-01 11:53:40.714 10269 10269 F DEBUG   :     rbp 000077caf8b998d0  rsp 000077caf8b99880  rip 000077cb252aa917  err 0000000000000004
+10-01 11:53:40.714 10269 10269 F DEBUG   : 13 total frames
+10-01 11:53:40.714 10269 10269 F DEBUG   : backtrace:
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #00 pc 0000000000096917  /vendor/lib64/libGLESv2_enc.so (GL2Encoder::s_glDrawElements(void*, unsigned int, int, unsigned int, void const*)+535) (BuildId: 0af34203490f9912da39acc0ba8771ad)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #01 pc 00000000008faac1  /data/app/~~J_IPfPqxG54Tnch4cS93mw==/org.example.maplibrerepro-s9s75wjP2Go1jI9PbwqmMw==/base.apk!libmaplibre.so (offset 0x2168000) (BuildId: 43b82c59a63af5c7201b9bbdb477c282d66a5815)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #02 pc 000000000091d18c  /data/app/~~J_IPfPqxG54Tnch4cS93mw==/org.example.maplibrerepro-s9s75wjP2Go1jI9PbwqmMw==/base.apk!libmaplibre.so (offset 0x2168000) (BuildId: 43b82c59a63af5c7201b9bbdb477c282d66a5815)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #03 pc 000000000091e8dd  /data/app/~~J_IPfPqxG54Tnch4cS93mw==/org.example.maplibrerepro-s9s75wjP2Go1jI9PbwqmMw==/base.apk!libmaplibre.so (offset 0x2168000) (BuildId: 43b82c59a63af5c7201b9bbdb477c282d66a5815)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #04 pc 00000000006f0d30  /data/app/~~J_IPfPqxG54Tnch4cS93mw==/org.example.maplibrerepro-s9s75wjP2Go1jI9PbwqmMw==/base.apk!libmaplibre.so (offset 0x2168000) (BuildId: 43b82c59a63af5c7201b9bbdb477c282d66a5815)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #05 pc 00000000006eedf1  /data/app/~~J_IPfPqxG54Tnch4cS93mw==/org.example.maplibrerepro-s9s75wjP2Go1jI9PbwqmMw==/base.apk!libmaplibre.so (offset 0x2168000) (BuildId: 43b82c59a63af5c7201b9bbdb477c282d66a5815)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #06 pc 000000000092d4e8  /data/app/~~J_IPfPqxG54Tnch4cS93mw==/org.example.maplibrerepro-s9s75wjP2Go1jI9PbwqmMw==/base.apk!libmaplibre.so (offset 0x2168000) (BuildId: 43b82c59a63af5c7201b9bbdb477c282d66a5815)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #07 pc 0000000000923209  /data/app/~~J_IPfPqxG54Tnch4cS93mw==/org.example.maplibrerepro-s9s75wjP2Go1jI9PbwqmMw==/base.apk!libmaplibre.so (offset 0x2168000) (BuildId: 43b82c59a63af5c7201b9bbdb477c282d66a5815)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #08 pc 0000000000923a62  /data/app/~~J_IPfPqxG54Tnch4cS93mw==/org.example.maplibrerepro-s9s75wjP2Go1jI9PbwqmMw==/base.apk!libmaplibre.so (offset 0x2168000) (BuildId: 43b82c59a63af5c7201b9bbdb477c282d66a5815)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #09 pc 000000000092b2aa  /data/app/~~J_IPfPqxG54Tnch4cS93mw==/org.example.maplibrerepro-s9s75wjP2Go1jI9PbwqmMw==/base.apk!libmaplibre.so (offset 0x2168000) (BuildId: 43b82c59a63af5c7201b9bbdb477c282d66a5815)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #10 pc 000000000092b06f  /data/app/~~J_IPfPqxG54Tnch4cS93mw==/org.example.maplibrerepro-s9s75wjP2Go1jI9PbwqmMw==/base.apk!libmaplibre.so (offset 0x2168000) (BuildId: 43b82c59a63af5c7201b9bbdb477c282d66a5815)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #11 pc 000000000008c7af  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+63) (BuildId: aa76614279c09bc4bbbbbec6ba4a811e)
+10-01 11:53:40.714 10269 10269 F DEBUG   :       #12 pc 000000000008670d  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+45) (BuildId: aa76614279c09bc4bbbbbec6ba4a811e)
+10-01 11:53:40.714 10269 10269 F DEBUG   : Note: To display stack pointer information, use the pbtombstone tool:
+10-01 11:53:40.714 10269 10269 F DEBUG   :         pbtombstone --display-sp tombstone_XX.pb

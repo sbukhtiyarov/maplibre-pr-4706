@@ -1,0 +1,9 @@
+10-01 11:53:34.897 10198 10198 I SnapshotRepro: Ready: 480x240, pixel ratio 1, zoom 15, pitch 40, JPEG 50
+10-01 11:53:34.908 10198 10198 I SnapshotRepro: START style=https://tiles.openfreemap.org/styles/bright
+10-01 11:53:34.971 10198 10198 I SnapshotRepro: REQUEST 1 bearing=0.177
+10-01 11:53:37.760 10198 10198 I SnapshotRepro: FRAME 1 durationMs=2788 jpegBytes=17699 encoded=true
+10-01 11:53:37.780 10198 10198 I SnapshotRepro: REQUEST 2 bearing=8.607
+10-01 11:53:38.215 10198 10198 I SnapshotRepro: FRAME 2 durationMs=437 jpegBytes=18185 encoded=true
+10-01 11:53:38.779 10198 10198 I SnapshotRepro: REQUEST 3 bearing=11.607000000000001
+10-01 11:53:38.859 10198 10198 I SnapshotRepro: FRAME 3 durationMs=81 jpegBytes=18233 encoded=true
+10-01 11:53:39.779 10198 10198 I SnapshotRepro: REQUEST 4 bearing=14.613

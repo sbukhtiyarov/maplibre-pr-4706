@@ -1,0 +1,5 @@
+mode=stale renderer=ANGLE ((Samsung Xclipse 940) on Vulkan 1.3.279) version=OpenGL ES 3.2 Driver version: 24.1.307 git hash: 86f99cfe6317
+old=2 replacement=3 bound=2 oldIsBuffer=0
+calling glDrawElements
+pixel=0,255,0,255
+PASS

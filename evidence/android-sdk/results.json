@@ -1,0 +1,25 @@
+{
+  "testedAt": "2026-10-01",
+  "sdkVersion": "11.11.0",
+  "deviceFingerprint": "google/sdk_gphone16k_x86_64/emu64xa16k:17/CE2A.260420.050/16231978:user/dev-keys",
+  "pageSize": 16384,
+  "renderer": "Android Emulator OpenGL ES Translator (Intel(R) Graphics)",
+  "glVersion": "OpenGL ES 3.0 (4.5.0 - Build 32.0.101.8826)",
+  "style": "https://tiles.openfreemap.org/styles/bright",
+  "unpatched": {
+    "apkSha256": "4332723696A1D9921CF933E6B78E191D828557C06A1C78D92C3CD5397E538770",
+    "completedFrames": 3,
+    "failedRequest": 4,
+    "signal": "SIGSEGV",
+    "faultAddress": "0x30",
+    "thread": "Snapshotter",
+    "topFrame": "GL2Encoder::s_glDrawElements"
+  },
+  "patched": {
+    "aarSha256": "6F7413D7C7CBB770E2E92D54CC9CBE156A7A199A99DE245E1CBD3A976774D3E7",
+    "nativeX86_64Sha256": "D90C7409CFCE39C9292CA2301AB0EB40E053D1D414C3BBA6047FAF9DB980C42C",
+    "apkSha256": "A7833C74130D5BA316975727DC0301E4AC7C9B0476D66219B512C2EE2EBB5DA9",
+    "status": "completed without observed crash",
+    "completedFrames": 120
+  }
+}

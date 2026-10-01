@@ -1,0 +1,5 @@
+*
+!Dockerfile
+!.dockerignore
+!vao-repro.cpp
+!build-repro.sh

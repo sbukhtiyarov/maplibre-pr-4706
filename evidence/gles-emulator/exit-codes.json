@@ -1,0 +1,9 @@
+{
+  "staleExit": 139,
+  "fixedExit": 0,
+  "model": "sdk_gphone16k_x86_64",
+  "abi": "x86_64",
+  "fingerprint": "google/sdk_gphone16k_x86_64/emu64xa16k:17/CE2A.260420.050/16231978:user/dev-keys",
+  "emulator": true,
+  "binarySha256": "D3CF94194A7EE7397F286DF7263F9508B4A6AA7849D173B67B3C8379976A41CD"
+}

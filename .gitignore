@@ -1,0 +1,9 @@
+.gradle/
+**/build/
+local.properties
+/android/app/libs/
+/gles/vao-repro
+/gles/arm64/
+/results/
+.idea/
+*.iml
